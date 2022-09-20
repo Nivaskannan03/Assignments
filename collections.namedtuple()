@@ -1,0 +1,15 @@
+from collections import namedtuple
+
+getin = int(input())
+order = input().split()
+student = namedtuple('student', order)
+h = 0
+
+for i in range(getin):
+    inputt = input().split()
+    stu = student(*inputt)
+    
+    # print(*inputt)
+    h += int(stu.MARKS)
+    
+print(h/getin)
