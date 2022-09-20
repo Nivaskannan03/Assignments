@@ -1,0 +1,11 @@
+import numpy as np
+#
+n = list(map(float, input().split()))
+np.set_printoptions(legacy='1.13')
+list1 = np.array(n)
+list2 = np.floor(list1)
+print(list2)
+list3 = np.ceil(list1)
+print(list3)
+list4 = np.rint(list1)
+print(list4)
