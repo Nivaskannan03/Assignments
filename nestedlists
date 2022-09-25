@@ -11,9 +11,8 @@ if __name__ == '__main__':
         
     low=list(set(score_list))
     low.sort()
-    
-    
-    
+
+
     for name,score in total_list:
         if score==low[1]:
             name_list.append(name)
